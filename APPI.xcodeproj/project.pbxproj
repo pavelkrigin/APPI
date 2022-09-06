@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA18C14328C7CA37009CD244 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18C14228C7CA37009CD244 /* Person.swift */; };
+		CA18C14528C7CA6A009CD244 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18C14428C7CA6A009CD244 /* DataStore.swift */; };
 		CA64DE9728C6865D0082FC37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA64DE9628C6865D0082FC37 /* AppDelegate.swift */; };
 		CA64DE9928C6865D0082FC37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA64DE9828C6865D0082FC37 /* SceneDelegate.swift */; };
 		CA64DE9B28C6865D0082FC37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA64DE9A28C6865D0082FC37 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA18C14228C7CA37009CD244 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		CA18C14428C7CA6A009CD244 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		CA64DE9328C6865D0082FC37 /* APPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA64DE9628C6865D0082FC37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA64DE9828C6865D0082FC37 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA18C13F28C7C958009CD244 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CA18C14428C7CA6A009CD244 /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CA18C14028C7C9A7009CD244 /* APP */ = {
+			isa = PBXGroup;
+			children = (
+				CA64DE9628C6865D0082FC37 /* AppDelegate.swift */,
+				CA64DE9828C6865D0082FC37 /* SceneDelegate.swift */,
+			);
+			path = APP;
+			sourceTree = "<group>";
+		};
+		CA18C14128C7C9B8009CD244 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CA18C14228C7CA37009CD244 /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		CA64DE8A28C6865D0082FC37 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +85,40 @@
 		CA64DE9528C6865D0082FC37 /* APPI */ = {
 			isa = PBXGroup;
 			children = (
-				CA64DE9628C6865D0082FC37 /* AppDelegate.swift */,
-				CA64DE9828C6865D0082FC37 /* SceneDelegate.swift */,
-				CA64DE9A28C6865D0082FC37 /* ViewController.swift */,
-				CA64DE9C28C6865D0082FC37 /* Main.storyboard */,
-				CA64DE9F28C686600082FC37 /* Assets.xcassets */,
-				CA64DEA128C686600082FC37 /* LaunchScreen.storyboard */,
+				CA18C14128C7C9B8009CD244 /* Models */,
+				CA18C14028C7C9A7009CD244 /* APP */,
+				CA18C13F28C7C958009CD244 /* Services */,
+				CA64DEAC28C787620082FC37 /* Resources */,
+				CA64DEAB28C787410082FC37 /* ViewControllers */,
+				CA64DEAA28C787230082FC37 /* StoryBoards */,
 				CA64DEA428C686600082FC37 /* Info.plist */,
 			);
 			path = APPI;
+			sourceTree = "<group>";
+		};
+		CA64DEAA28C787230082FC37 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				CA64DE9C28C6865D0082FC37 /* Main.storyboard */,
+				CA64DEA128C686600082FC37 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		CA64DEAB28C787410082FC37 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA64DE9A28C6865D0082FC37 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CA64DEAC28C787620082FC37 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA64DE9F28C686600082FC37 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +194,8 @@
 			files = (
 				CA64DE9B28C6865D0082FC37 /* ViewController.swift in Sources */,
 				CA64DE9728C6865D0082FC37 /* AppDelegate.swift in Sources */,
+				CA18C14328C7CA37009CD244 /* Person.swift in Sources */,
+				CA18C14528C7CA6A009CD244 /* DataStore.swift in Sources */,
 				CA64DE9928C6865D0082FC37 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
