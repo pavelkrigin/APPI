@@ -4,7 +4,7 @@
 //
 //  Created by Pavel Krigin on 5.9.22..
 //
-
+// не изменял этот файл
 import UIKit
 
 final class SceneDelegate: UIResponder, UIWindowSceneDelegate {

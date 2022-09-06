@@ -16,6 +16,6 @@ struct Person {
     let gitAccount: String
     
     var fullName: String {
-        "\(name) \(surname)" //нужно доработать
+        "\(name) \(surname)" //нужно доработать для корректного отображения
     }
 }

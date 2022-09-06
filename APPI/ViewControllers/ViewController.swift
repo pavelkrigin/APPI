@@ -4,7 +4,7 @@
 //
 //  Created by Pavel Krigin on 5.9.22..
 //
-
+// добавил final
 import UIKit
 
 final class ViewController: UIViewController {
