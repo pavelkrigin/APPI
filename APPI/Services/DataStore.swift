@@ -9,28 +9,28 @@ final class DataStore {
     
     static let shared = DataStore()
     
-    var fullNames = [
-        "Альбина Петренко", "Павел Кригин", "Павел Лазарев", "Илья Осипов"
+    var names = [
+        "Илья", "Павел", "Павел", "Альбина"
     ]
-    /*
+
     let surnames = [
-        "Петренко", "Кригин", "Лазарев", "Осипов"
+        "Осипов", "Кригин", "Лазарев", "Петренко"
         
     ]
-     */
+    
     
     let emails = [
-        "albina@mail.ru", "pavel@mail.ru", "pavel_l@mail.ru",
-        "ilya@mail.ru"
+        "ilya@mail.ru", "pavel@mail.ru", "pavel_l@mail.ru",
+        "albina@mail.ru"
     ]
     
     let telegramms = [
-        "https://t.me/AlbinaValet", "https://t.me/Pavel_Krigin", "https://t.me/LazarevPavel", "https://t.me/OSIIOS"
+        "https://t.me/OSIIOS", "https://t.me/Pavel_Krigin", "https://t.me/LazarevPavel", "https://t.me/AlbinaValet"
         
     ]
     
     let gitAccounts = [
-        "AnioBom", "pavelkrigin", "OSIIOSdev", "PashaLazarev"
+        "OSIIOSdev", "pavelkrigin", "PashaLazarev", "AnioBom"
     ]
     
     private init() {}
