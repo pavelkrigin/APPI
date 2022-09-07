@@ -133,7 +133,7 @@
                                             <rect key="frame" x="74" y="8" width="324" height="52"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmW-gI-L0d">
-                                                    <rect key="frame" x="0.0" y="0.0" width="324" height="14.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="324" height="52"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="14.5" id="lZa-yK-ve3"/>
                                                     </constraints>
@@ -141,17 +141,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Surname: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPR-Sb-RXG">
-                                                    <rect key="frame" x="0.0" y="22.5" width="324" height="29.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
-                                            <constraints>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="324" id="KRB-Td-IMt"/>
-                                                <constraint firstAttribute="height" constant="45" id="NoW-TO-4HP"/>
-                                            </constraints>
                                         </stackView>
                                     </subviews>
                                     <constraints>
@@ -167,7 +157,6 @@
                                 <color key="backgroundColor" systemColor="systemCyanColor"/>
                                 <connections>
                                     <outlet property="nameLabel" destination="zmW-gI-L0d" id="o71-EV-knO"/>
-                                    <outlet property="surnameLabel" destination="HPR-Sb-RXG" id="1BM-JP-ZTE"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="65" id="bHV-Fq-nEK">

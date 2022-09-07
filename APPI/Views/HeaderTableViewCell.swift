@@ -10,7 +10,5 @@ import UIKit
 class HeaderTableViewCell: UITableViewCell {
 
     @IBOutlet var nameLabel: UILabel!
-    @IBOutlet var surnameLabel: UILabel!
     
-
 }
