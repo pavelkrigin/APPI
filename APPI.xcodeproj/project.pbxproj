@@ -49,13 +49,13 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		CA18C14028C7C9A7009CD244 /* APP */ = {
+		CA18C14028C7C9A7009CD244 /* App */ = {
 			isa = PBXGroup;
 			children = (
 				CA64DE9628C6865D0082FC37 /* AppDelegate.swift */,
 				CA64DE9828C6865D0082FC37 /* SceneDelegate.swift */,
 			);
-			path = APP;
+			path = App;
 			sourceTree = "<group>";
 		};
 		CA18C14128C7C9B8009CD244 /* Models */ = {
@@ -86,23 +86,23 @@
 			isa = PBXGroup;
 			children = (
 				CA18C14128C7C9B8009CD244 /* Models */,
-				CA18C14028C7C9A7009CD244 /* APP */,
+				CA18C14028C7C9A7009CD244 /* App */,
 				CA18C13F28C7C958009CD244 /* Services */,
 				CA64DEAC28C787620082FC37 /* Resources */,
 				CA64DEAB28C787410082FC37 /* ViewControllers */,
-				CA64DEAA28C787230082FC37 /* StoryBoards */,
+				CA64DEAA28C787230082FC37 /* Storyboards */,
 				CA64DEA428C686600082FC37 /* Info.plist */,
 			);
 			path = APPI;
 			sourceTree = "<group>";
 		};
-		CA64DEAA28C787230082FC37 /* StoryBoards */ = {
+		CA64DEAA28C787230082FC37 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				CA64DE9C28C6865D0082FC37 /* Main.storyboard */,
 				CA64DEA128C686600082FC37 /* LaunchScreen.storyboard */,
 			);
-			path = StoryBoards;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		CA64DEAB28C787410082FC37 /* ViewControllers */ = {
