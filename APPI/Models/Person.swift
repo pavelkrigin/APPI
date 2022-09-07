@@ -9,13 +9,42 @@ import Foundation
 
 struct Person {
     
-    let name: String
-    let surname: String
+    let fullName: String
+    //let surname: String
     let email: String
     let telegramm: String
     let gitAccount: String
     
-    var fullName: String {
-        "\(name) \(surname)" //нужно доработать для корректного отображения
+    var rows: [String] {
+        [email, telegramm, gitAccount]
     }
+}
+
+extension Person {
+    static func getContactList() -> [Person] {
+        var persons: [Person] = []
+        
+        let fullNames = DataStore.shared.fullNames
+        let emails = DataStore.shared.emails
+        let telegramms = DataStore.shared.telegramms
+        let gitAccounts = DataStore.shared.gitAccounts
+        
+        let iterationCount = min(
+            fullNames.count,
+            emails.count,
+            telegramms.count,
+            gitAccounts.count
+        )
+        for index in 0..<iterationCount {
+            let person = Person(fullName: fullNames[index], email: emails[index], telegramm: telegramms[index], gitAccount: gitAccounts[index]
+            )
+            persons.append(person)
+        }
+        return persons
+    }
+}
+enum Contacts: String {
+    case email = "email"
+    case telegramm = "telegramm"
+    case gitAccount = "gitHub"
 }
