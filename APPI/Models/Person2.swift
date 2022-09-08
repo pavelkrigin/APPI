@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Person {
+struct Person2 {
     
     let name: String
     let surname: String
@@ -24,9 +24,9 @@ struct Person {
     }
 }
 
-extension Person {
-    static func getContactList() -> [Person] {
-        var persons: [Person] = []
+extension Person2 {
+    static func getContactList() -> [Person2] {
+        var persons: [Person2] = []
         
         let names = DataStore.shared.names
         let surnames = DataStore.shared.surnames
@@ -42,7 +42,7 @@ extension Person {
             gitAccounts.count
         )
         for index in 0..<iterationCount {
-            let person = Person(name: names[index], surname: surnames[index],  email: emails[index], telegramm: telegramms[index], gitAccount: gitAccounts[index]
+            let person = Person2(name: names[index], surname: surnames[index],  email: emails[index], telegramm: telegramms[index], gitAccount: gitAccounts[index]
             )
             persons.append(person)
         }
