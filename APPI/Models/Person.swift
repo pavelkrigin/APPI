@@ -7,6 +7,19 @@
 
 import Foundation
 
+struct User {
+    let login: String
+    let password: String
+    
+    static func getUserData() -> User {
+        User(
+            login: "1",
+            password: "1"
+
+        )
+    }
+}
+
 struct Person {
     
     let name: String
@@ -19,3 +32,5 @@ struct Person {
         "\(name) \(surname)" //нужно доработать для корректного отображения
     }
 }
+
+
