@@ -29,6 +29,7 @@ class ContactDetailsTableViewController: UITableViewController {
         let person = persons[indexPath.section]
         var content = cell.defaultContentConfiguration()
         content.text = person.rows[indexPath.row]
+        content.textProperties.font = UIFont.systemFont(ofSize: 12)
         
         switch indexPath.row {
         case 0:
@@ -62,6 +63,9 @@ extension ContactDetailsTableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        50
+    }
 }
 
     /*

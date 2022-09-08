@@ -50,7 +50,7 @@ extension Person {
     }
 }
 enum Contacts: String {
-    case email = "email"
-    case telegramm = "telegramm"
-    case gitAccount = "gitHub"
+    case email = "envelope.circle.fill"
+    case telegramm = "bubble.left.fill"
+    case gitAccount = "pawprint.fill"
 }
