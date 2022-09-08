@@ -7,26 +7,30 @@
 
 import UIKit
 
-class QuestionsViewController: UIViewController {
+final class QuestionsViewController: UIViewController {
+    // MARK: IBOutlets
     @IBOutlet var paletteImage: UIImageView!
     @IBOutlet var foodImage: UIImageView!
     @IBOutlet var hobbyImage: UIImageView!
     @IBOutlet var movieImage: UIImageView!
     
+    @IBOutlet var colorButtons: [UIButton]!
+    @IBOutlet var foodButtons: [UIButton]!
+    @IBOutlet var hobbyButton: [UIButton]!
+    @IBOutlet var movieButton: [UIButton]!
+    
+    // MARK: Private properties
     private let questions = Question.getQuestions()
+    private var questionCatImage: String?
     
-    var firstQuestionCatImage: String?
-    var secondQuestionCatImage: String?
-    var thirdQuestionCatImage: String?
-    var fourtQuestionCatImage: String?
-    
+    // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        paletteImage.image = UIImage(named: firstQuestionCatImage ?? "palette")
-        foodImage.image = UIImage(named: secondQuestionCatImage ?? "food")
-        hobbyImage.image = UIImage(named: thirdQuestionCatImage ?? "hobby")
-        movieImage.image = UIImage(named: fourtQuestionCatImage ?? "movie")
+        paletteImage.image = UIImage(named: questionCatImage ?? "palette")
+        foodImage.image = UIImage(named: questionCatImage ?? "food")
+        hobbyImage.image = UIImage(named: questionCatImage ?? "hobby")
+        movieImage.image = UIImage(named: questionCatImage ?? "movie")
         
     }
 }

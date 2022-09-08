@@ -7,11 +7,14 @@
 
 import UIKit
 
-class ResultsViewController: UIViewController {
+final class ResultsViewController: UIViewController {
+    // MARK: IBOutlets
     @IBOutlet var resultTestImage: UIImageView!
     
-    var resultCatImage: String?
+    // MARK: Private properties
+    private var resultCatImage: String?
     
+    // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         

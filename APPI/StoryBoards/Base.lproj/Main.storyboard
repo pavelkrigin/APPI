@@ -353,9 +353,6 @@
                                                 </fragment>
                                             </attributedString>
                                         </buttonConfiguration>
-                                        <connections>
-                                            <segue destination="u8z-33-D3n" kind="presentation" modalPresentationStyle="fullScreen" id="F6P-eG-tv7"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8M1-LJ-hzN">
                                         <rect key="frame" x="0.0" y="56.5" width="175" height="31.5"/>
@@ -557,12 +554,12 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="o0C-3E-Kch"/>
                                 <exclude reference="lq8-aH-3V9"/>
+                                <exclude reference="8Zu-NG-Yhj"/>
+                                <exclude reference="Xmh-IG-ZNm"/>
                                 <exclude reference="b54-Ep-RBR"/>
                                 <exclude reference="zmy-Sc-lOZ"/>
                                 <exclude reference="1eH-De-mJN"/>
-                                <exclude reference="ArU-Fb-e8r"/>
                             </mask>
                         </variation>
                     </view>
@@ -572,6 +569,22 @@
                         <outlet property="hobbyImage" destination="KN8-Gu-Cwi" id="HmG-VJ-ahD"/>
                         <outlet property="movieImage" destination="9jA-hT-Zaw" id="lJD-XS-gbz"/>
                         <outlet property="paletteImage" destination="qCq-qq-2wB" id="0Kv-uT-4tD"/>
+                        <outletCollection property="colorButtons" destination="vjE-aP-ZVd" collectionClass="NSMutableArray" id="QXF-Z2-DeM"/>
+                        <outletCollection property="colorButtons" destination="8M1-LJ-hzN" collectionClass="NSMutableArray" id="Xjq-qj-my5"/>
+                        <outletCollection property="colorButtons" destination="dsL-jG-zlt" collectionClass="NSMutableArray" id="afq-1r-oVI"/>
+                        <outletCollection property="colorButtons" destination="po3-pq-NsA" collectionClass="NSMutableArray" id="Cdu-Wb-nfq"/>
+                        <outletCollection property="foodButtons" destination="fu5-ZB-R5y" collectionClass="NSMutableArray" id="ort-Hg-rGJ"/>
+                        <outletCollection property="foodButtons" destination="HWC-IO-n3o" collectionClass="NSMutableArray" id="ZGN-hs-J4z"/>
+                        <outletCollection property="foodButtons" destination="Zmg-8e-RAV" collectionClass="NSMutableArray" id="x9o-ek-Oru"/>
+                        <outletCollection property="foodButtons" destination="B0w-hP-H6H" collectionClass="NSMutableArray" id="UfC-7h-1Co"/>
+                        <outletCollection property="hobbyButton" destination="kNh-lG-Var" collectionClass="NSMutableArray" id="Gvw-v9-KHd"/>
+                        <outletCollection property="hobbyButton" destination="CEn-Vo-Ksr" collectionClass="NSMutableArray" id="xO9-oO-plX"/>
+                        <outletCollection property="hobbyButton" destination="MWV-AX-FJ5" collectionClass="NSMutableArray" id="jdO-LG-kQk"/>
+                        <outletCollection property="hobbyButton" destination="ocW-0v-dOn" collectionClass="NSMutableArray" id="0Oa-qF-0dV"/>
+                        <outletCollection property="movieButton" destination="lzY-bi-dSx" collectionClass="NSMutableArray" id="pVJ-Wy-VuR"/>
+                        <outletCollection property="movieButton" destination="D35-iZ-OLU" collectionClass="NSMutableArray" id="PQX-eX-U78"/>
+                        <outletCollection property="movieButton" destination="3vF-Bd-Zqc" collectionClass="NSMutableArray" id="iOZ-KE-abT"/>
+                        <outletCollection property="movieButton" destination="rCo-WA-Jzy" collectionClass="NSMutableArray" id="ueo-Rj-yfT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Thb-Xf-AMd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

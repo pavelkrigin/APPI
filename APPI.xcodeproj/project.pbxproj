@@ -121,9 +121,9 @@
 			children = (
 				CA64DE9A28C6865D0082FC37 /* ViewController.swift */,
 				6913146128C9AF72002C09DF /* LoginViewController.swift */,
+				6913146328C9C718002C09DF /* GetStartViewController.swift */,
 				6913145D28C9AEC2002C09DF /* QuestionsViewController.swift */,
 				6913145F28C9AEDE002C09DF /* ResultsViewController.swift */,
-				6913146328C9C718002C09DF /* GetStartViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";

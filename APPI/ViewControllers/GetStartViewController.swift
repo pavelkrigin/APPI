@@ -7,11 +7,14 @@
 
 import UIKit
 
-class GetStartViewController: UIViewController {
+final class GetStartViewController: UIViewController {
+    // MARK: IBOutlets
     @IBOutlet var getStartCatImage: UIImageView!
     
-    var testCat: String?
+    // MARK: Private properties
+    private var testCat: String?
     
+    // MARK: Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -19,6 +22,7 @@ class GetStartViewController: UIViewController {
 
     }
     
+    // MARK: IBActions
     @IBAction func toStartPageSegue(_ segue: UIStoryboardSegue) {
     }
     
