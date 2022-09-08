@@ -8,13 +8,13 @@
 import UIKit
 
 class ResultsViewController: UIViewController {
-
+    @IBOutlet var resultTestImage: UIImageView!
+    
+    var resultCatImage: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        resultTestImage.image = UIImage(named: resultCatImage ?? "franceCat")
     }
-    
-    @IBAction func AgainButton() {
-        dismiss(animated: true)
-    }
-    
 }
