@@ -99,7 +99,7 @@ extension Question {
                     Answer(title: "Sausage", type: [.germanCat, .russianCat]),
                     Answer(title: "Fish", type: [.russianCat, .japaneseCat]),
                     Answer(title: "Sushi", type: [.japaneseCat, .russianCat]),
-                    Answer(title: "Sandwiches", type: [.englishCat, .spanishCat])
+                    Answer(title: "Sandwich", type: [.englishCat, .spanishCat])
                 ]
             ),
             Question(
@@ -108,7 +108,7 @@ extension Question {
                     Answer(title: "To sleep", type: [.spanishCat, .frenchCat]),
                     Answer(title: "To eat", type: [.russianCat, .germanCat]),
                     Answer(title: "To walk", type: [.frenchCat, .englishCat]),
-                    Answer(title: "To work", type: [.japaneseCat, .germanCat])
+                    Answer(title: "To play", type: [.japaneseCat, .germanCat])
                 ]
             ),
             Question(
