@@ -18,7 +18,7 @@ final class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        resultsImageView.image = UIImage(named: resultImage ?? "frenchCat")
+        resultsImageView.image = UIImage(named: resultImage ?? "frenchCat")
     }
 
 }
