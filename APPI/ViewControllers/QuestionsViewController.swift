@@ -31,8 +31,9 @@ final class QuestionsViewController: UIViewController {
     
     // MARK: - Properties
     private let questions = Question.getQuestions()
+    private var questionIndex = 0
     
-    var questionCatImage: String?
+    private var questionCatImage: String?
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
