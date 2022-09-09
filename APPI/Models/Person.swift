@@ -16,7 +16,11 @@ struct Person {
     let gitAccount: String
     
     var fullName: String {
-        "\(name) \(surname)" //нужно доработать для корректного отображения
+        "\(name) \(surname)"
+    }
+    
+    var rows: [String] {
+        [email, telegramm, gitAccount]
     }
 }
 extension Person {
@@ -36,5 +40,10 @@ extension Person {
         
         return persons
     }
+}
 
+enum Contacts: String {
+    case email = "envelope.circle.fill"
+    case telegramm = "bubble.left.fill"
+    case gitAccount = "pawprint.circle.fill"
 }

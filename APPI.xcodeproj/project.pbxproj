@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0431EDE528CB19940095028A /* ContactDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431EDE428CB19940095028A /* ContactDetailsTableViewController.swift */; };
 		CA18C14328C7CA37009CD244 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18C14228C7CA37009CD244 /* Person.swift */; };
 		CA18C14528C7CA6A009CD244 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA18C14428C7CA6A009CD244 /* DataStore.swift */; };
 		CA64DE9728C6865D0082FC37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA64DE9628C6865D0082FC37 /* AppDelegate.swift */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0431EDE428CB19940095028A /* ContactDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactDetailsTableViewController.swift; path = "../../../../Documents/APPI 2/APPI/ViewControllers/ContactDetailsTableViewController.swift"; sourceTree = "<group>"; };
+		0431EDEA28CB1A190095028A /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 		CA18C14228C7CA37009CD244 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		CA18C14428C7CA6A009CD244 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		CA64DE9328C6865D0082FC37 /* APPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0431EDEB28CB1A370095028A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0431EDEA28CB1A190095028A /* HeaderTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CA18C13F28C7C958009CD244 /* Services */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +98,7 @@
 		CA64DE9528C6865D0082FC37 /* APPI */ = {
 			isa = PBXGroup;
 			children = (
+				0431EDEB28CB1A370095028A /* Views */,
 				CA18C14128C7C9B8009CD244 /* Models */,
 				CA18C14028C7C9A7009CD244 /* APP */,
 				CA18C13F28C7C958009CD244 /* Services */,
@@ -112,6 +124,7 @@
 			children = (
 				CA64DE9A28C6865D0082FC37 /* ViewController.swift */,
 				FAB5F7A328CA03DE00BC4E68 /* PersonListViewController.swift */,
+				0431EDE428CB19940095028A /* ContactDetailsTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -195,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0431EDE528CB19940095028A /* ContactDetailsTableViewController.swift in Sources */,
 				CA64DE9B28C6865D0082FC37 /* ViewController.swift in Sources */,
 				CA64DE9728C6865D0082FC37 /* AppDelegate.swift in Sources */,
 				CA18C14328C7CA37009CD244 /* Person.swift in Sources */,
