@@ -57,8 +57,8 @@ class ContactDetailsTableViewController: UITableViewController {
            override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
                let cell = tableView.dequeueReusableCell(withIdentifier: "headerCell") as? HeaderTableViewCell
                let person = personsContact[section]
-               //cell?.nameLabel.text = Details.name
-               //cell?.surnameLabel.text = Details.surname
+               cell?.nameLabel.text = person.name
+               cell?.surnameLabel.text = person.surname
                
                return cell
            }

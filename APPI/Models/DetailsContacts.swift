@@ -9,16 +9,16 @@ import Foundation
 
 struct Details {
     let name: String
-        let surname: String
-        let email: String
-        let telegramm: String
-        let gitAccount: String
+    let surname: String
+    let email: String
+    let telegramm: String
+    let gitAccount: String
         
-        var fullName: String {
+    var fullName: String {
             "\(name) \(surname)"
         }
         
-        var rows: [String] {
+    var rows: [String] {
             [email, telegramm, gitAccount]
         }
 }
