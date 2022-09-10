@@ -7,6 +7,19 @@
 
 import Foundation
 
+struct User {
+    let login: String
+    let password: String
+    
+    static func getUserData() -> User {
+        User(
+            login: "1",
+            password: "1"
+
+        )
+    }
+}
+
 struct Person {
     
     let name: String
@@ -16,7 +29,7 @@ struct Person {
     let gitAccount: String
     
     var fullName: String {
-        "\(name) \(surname)" //нужно доработать для корректного отображения
+        "\(name) \(surname)"
     }
     var rows: [String] {
             [email, telegramm, gitAccount]
