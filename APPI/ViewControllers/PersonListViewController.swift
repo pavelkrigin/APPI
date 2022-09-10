@@ -39,6 +39,7 @@ final class PersonListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: "show", sender: nil)
     }
   
     // MARK: - Navigation
