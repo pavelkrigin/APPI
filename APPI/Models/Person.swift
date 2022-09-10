@@ -18,6 +18,9 @@ struct Person {
     var fullName: String {
         "\(name) \(surname)" //нужно доработать для корректного отображения
     }
+    var rows: [String] {
+            [email, telegramm, gitAccount]
+        }
 }
 extension Person {
     static func getPersonsData() -> [Person] {
@@ -36,5 +39,10 @@ extension Person {
         
         return persons
     }
-    
+}
+
+enum Contacts: String {
+    case email = "envelope.circle.fill"
+    case telegramm = "bubble.left.fill"
+    case gitAccount = "pawprint.circle.fill"
 }

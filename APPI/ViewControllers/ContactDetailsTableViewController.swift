@@ -9,7 +9,7 @@ import UIKit
 
 class ContactDetailsTableViewController: UITableViewController {
 
-    let personsContact = Details.getContactList()
+    let personsContact = Person.getPersonsData()
 
 
            // MARK: - Table view data source

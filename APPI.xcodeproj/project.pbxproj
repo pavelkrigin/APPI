@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0401E0F328CB50CA0087FDEF /* DetailsContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401E0F228CB50CA0087FDEF /* DetailsContacts.swift */; };
 		0401E0F528CB51480087FDEF /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401E0F428CB51480087FDEF /* HeaderTableViewCell.swift */; };
 		0401E0F828CB51900087FDEF /* ContactDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401E0F728CB51900087FDEF /* ContactDetailsTableViewController.swift */; };
 		69A1867A28CB0618006F87B3 /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A1867928CB0618006F87B3 /* QuestionsViewController.swift */; };
@@ -26,7 +25,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0401E0F228CB50CA0087FDEF /* DetailsContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsContacts.swift; sourceTree = "<group>"; };
 		0401E0F428CB51480087FDEF /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
 		0401E0F728CB51900087FDEF /* ContactDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsTableViewController.swift; sourceTree = "<group>"; };
 		69A1867928CB0618006F87B3 /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 			children = (
 				CA18C14228C7CA37009CD244 /* Person.swift */,
 				69A1868128CB112B006F87B3 /* Questions.swift */,
-				0401E0F228CB50CA0087FDEF /* DetailsContacts.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -234,7 +231,6 @@
 				CA18C14328C7CA37009CD244 /* Person.swift in Sources */,
 				FAB5F7A428CA03DE00BC4E68 /* PersonListViewController.swift in Sources */,
 				CA18C14528C7CA6A009CD244 /* DataStore.swift in Sources */,
-				0401E0F328CB50CA0087FDEF /* DetailsContacts.swift in Sources */,
 				CA64DE9928C6865D0082FC37 /* SceneDelegate.swift in Sources */,
 				69A1867C28CB0637006F87B3 /* ResultsViewController.swift in Sources */,
 			);
