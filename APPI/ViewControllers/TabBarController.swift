@@ -8,6 +8,9 @@
 import UIKit
 
 class TabBarController: UITabBarController {
+    
+    var userName = User()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let appearance = UITabBarAppearance()

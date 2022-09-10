@@ -14,16 +14,19 @@ final class LoginViewController: UIViewController {
     
     private let user = User.getUserData()
     
+    //MARK: Override functions
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard segue.destination is TabBarController else { return }
-        
-        
+        guard let tabbarVC = segue.destination as? TabBarController else { return }
+        tabbarVC.userName = User.self
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
+    
+    //MARK: IBAction functions
     
     @IBAction func logInPressed() {
         guard userNameTextField.text == user.login, passwordTextField.text == user.password else {
@@ -48,6 +51,8 @@ final class LoginViewController: UIViewController {
         userNameTextField.text = ""
         passwordTextField.text = ""
     }
+    
+    //MARK: Private functions
     
     private func showAlert(title: String, message: String, textField: UITextField? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
