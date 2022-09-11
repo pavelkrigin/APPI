@@ -9,7 +9,7 @@ import UIKit
 
 class TabBarController: UITabBarController {
     
-    var userName = User()
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
