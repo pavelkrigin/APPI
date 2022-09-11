@@ -12,7 +12,6 @@ final class ResultsViewController: UIViewController {
     @IBOutlet var catLabel: UILabel!
     @IBOutlet var catDescription: UILabel!
     
-    
     @IBOutlet var resultsImageView: UIImageView!
     @IBOutlet var startTestAgainButton: UIButton!
     
@@ -24,10 +23,10 @@ final class ResultsViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        resultsImageView.image = UIImage(named: resultImage ?? "frenchCat")
         
         startTestAgainButton.layer.cornerRadius = 15
+        
+        updateRsult()
     }
 }
 
@@ -53,6 +52,7 @@ extension ResultsViewController {
     
     private func updateUserInterface(cat: CatType) {
         catLabel.text = "You are a cat - \(cat.rawValue)!"
+        resultsImageView.image = UIImage(named: resultImage ?? cat.rawValue)
         catDescription.text = cat.descriptionCat
     }
 }

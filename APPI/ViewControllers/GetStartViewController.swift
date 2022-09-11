@@ -21,7 +21,7 @@ final class GetStartViewController: UIViewController {
 
          getStartCatImage.image = UIImage(named: startCat ?? "getStartCat")
         
-        startTestButton.layer.cornerRadius = 10
+        startTestButton.layer.cornerRadius = 15
     }
     
     // MARK: - IBActions
