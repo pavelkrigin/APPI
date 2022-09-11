@@ -84,7 +84,7 @@
                     <connections>
                         <outlet property="passwordTextField" destination="Mmc-1B-Dhl" id="8OT-LT-C1J"/>
                         <outlet property="userNameTextField" destination="0bM-rP-TQ8" id="gsR-gy-Ucf"/>
-                        <segue destination="c5v-7b-fbp" kind="presentation" identifier="showWelcomeVC" modalPresentationStyle="fullScreen" id="aAf-x8-vqq"/>
+                        <segue destination="c5v-7b-fbp" kind="presentation" identifier="showTabbarVC" modalPresentationStyle="fullScreen" id="aAf-x8-vqq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p3T-qm-6qc" sceneMemberID="firstResponder"/>

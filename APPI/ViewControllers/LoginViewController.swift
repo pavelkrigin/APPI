@@ -38,7 +38,7 @@ final class LoginViewController: UIViewController {
             return
         }
 
-        performSegue(withIdentifier: "showStartVC", sender: nil)
+        performSegue(withIdentifier: "showTabbarVC", sender: nil)
     }
     
     @IBAction func forgotRegisterData(_ sender: UIButton) {

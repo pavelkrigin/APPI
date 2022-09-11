@@ -4,7 +4,7 @@
 //
 //  Created by Pavel Krigin on 6.9.22..
 //
-// необходимо проверить
+
 final class DataStore {
     
     static let shared = DataStore()

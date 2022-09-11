@@ -5,7 +5,7 @@
 //  Created by Pavel Krigin on 5.9.22..
 //
 
-// не трогал этот файл
+
 import UIKit
 
 @main
