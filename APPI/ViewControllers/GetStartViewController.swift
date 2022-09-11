@@ -18,7 +18,7 @@ final class GetStartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//         getStartCatImage.image = UIImage(named: startCat ?? "getStartCat")
+         getStartCatImage.image = UIImage(named: startCat ?? "getStartCat")
     }
     
     // MARK: - IBActions
