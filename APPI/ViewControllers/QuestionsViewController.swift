@@ -54,7 +54,6 @@ final class QuestionsViewController: UIViewController {
         movieImage.image = UIImage(named: questionImage ?? "movie")
         
         updateUserInterface()
-        showQuestionStackView(question: currentQuestion, answers: currentAnswers)
     }
     
     // MARK: - IBActions
@@ -63,6 +62,8 @@ final class QuestionsViewController: UIViewController {
         
         let currentAnswer = currentAnswers[currentIndex]
         answerSelected.append(currentAnswer)
+        
+        getNextQuestion()
     }
     
     @IBAction func foodAnswerButtonPressed(_ sender: UIButton) {
@@ -70,6 +71,8 @@ final class QuestionsViewController: UIViewController {
         
         let currentAnswer = currentAnswers[currentIndex]
         answerSelected.append(currentAnswer)
+        
+        getNextQuestion()
     }
     
     @IBAction func hobbyAnswerButtonPressed(_ sender: UIButton) {
@@ -77,6 +80,8 @@ final class QuestionsViewController: UIViewController {
         
         let currentAnswer = currentAnswers[currentIndex]
         answerSelected.append(currentAnswer)
+        
+        getNextQuestion()
     }
     
     @IBAction func movieAnswerButtonPressed(_ sender: UIButton) {
@@ -84,6 +89,8 @@ final class QuestionsViewController: UIViewController {
         
         let currentAnswer = currentAnswers[currentIndex]
         answerSelected.append(currentAnswer)
+        
+        getNextQuestion()
     }
 }
 
@@ -96,14 +103,59 @@ final class QuestionsViewController: UIViewController {
             for stackView in stackViews {
                 stackView?.isHidden = true
             }
+            
+            showCurrentAnswers(index: questionIndex)
         }
         
-        private func showQuestionStackView(question: String, answers: [Answer]) {
-            colorStackView.isHidden = false
+        private func showCurrentAnswers(index: Int) {
+            switch index {
+            case 0:
+                showColorQuestionStackView(stackView: colorStackView, question: currentQuestion, answers: currentAnswers, image: colorImage)
+            case 1:
+                showFoodQuestionStackView(question: currentQuestion, answers: currentAnswers, image:         foodImage)
+            case 2:
+                showHobbyQuestionStackView(question: currentQuestion, answers: currentAnswers, image: hobbyImage)
+            default:
+                showMovieQuestionStackView(question: currentQuestion, answers: currentAnswers, image: movieImage)
+            }
+        }
+        
+        private func showColorQuestionStackView(stackView: UIStackView, question: String, answers: [Answer], image: UIImageView) {
+            stackView.isHidden = false
             
             colorQuestion.text = currentQuestion
             
             for (button, answer) in zip(colorAnswers, answers) {
+                button.setTitle(answer.title, for: .normal)
+            }
+        }
+        
+        private func showFoodQuestionStackView(question: String, answers: [Answer], image: UIImageView) {
+            foodStackView.isHidden = false
+            
+            foodQuestion.text = currentQuestion
+            
+            for (button, answer) in zip(foodAnswers, answers) {
+                button.setTitle(answer.title, for: .normal)
+            }
+        }
+        
+        private func showHobbyQuestionStackView(question: String, answers: [Answer], image: UIImageView) {
+            hobbyStackView.isHidden = false
+            
+            hobbyQuestion.text = currentQuestion
+            
+            for (button, answer) in zip(hobbyAnswers, answers) {
+                button.setTitle(answer.title, for: .normal)
+            }
+        }
+        
+        private func showMovieQuestionStackView(question: String, answers: [Answer], image: UIImageView) {
+            movieStackView.isHidden = false
+            
+            movieQuestion.text = currentQuestion
+            
+            for (button, answer) in zip(movieAnswers, answers) {
                 button.setTitle(answer.title, for: .normal)
             }
         }

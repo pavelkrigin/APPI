@@ -14,7 +14,7 @@ struct Question {
 
 struct Answer {
     let title: String
-    let type: [CatType]
+    let type: CatType
 }
 
 enum CatType: String {
@@ -22,7 +22,7 @@ enum CatType: String {
    case englishCat = "englishCat"
    case russianCat = "russianCat"
    case spanishCat = "spanishCat"
-   case japaneseCat = "chineseCat"
+   case japaneseCat = "japaneseCat"
    case germanCat = "germanCat"
     
     var descriptionCat: String {
@@ -87,37 +87,37 @@ extension Question {
            Question(
                title: "Which color do you prefer?",
                answers: [
-                   Answer(title: "Red", type: [.spanishCat, .japaneseCat]),
-                   Answer(title: "White", type: [.russianCat, .frenchCat]),
-                   Answer(title: "Black", type: [.germanCat, .englishCat]),
-                   Answer(title: "Grey", type: [.englishCat, .frenchCat])
+                   Answer(title: "Red", type: .japaneseCat),
+                   Answer(title: "White", type: .frenchCat),
+                   Answer(title: "Black", type: .englishCat),
+                   Answer(title: "Grey", type: .frenchCat)
                ]
            ),
            Question(
                title: "What's your favorite food?",
                answers: [
-                   Answer(title: "Sausage", type: [.germanCat, .russianCat]),
-                   Answer(title: "Fish", type: [.russianCat, .japaneseCat]),
-                   Answer(title: "Sushi", type: [.japaneseCat, .russianCat]),
-                   Answer(title: "Sandwich", type: [.englishCat, .spanishCat])
+                   Answer(title: "Sausage", type: .russianCat),
+                   Answer(title: "Fish", type: .japaneseCat),
+                   Answer(title: "Sushi", type: .russianCat),
+                   Answer(title: "Sandwich", type: .spanishCat)
                ]
            ),
            Question(
                title: "What do you like to do most?",
                answers: [
-                   Answer(title: "To sleep", type: [.spanishCat, .frenchCat]),
-                   Answer(title: "To eat", type: [.russianCat, .germanCat]),
-                   Answer(title: "To walk", type: [.frenchCat, .englishCat]),
-                   Answer(title: "To play", type: [.japaneseCat, .germanCat])
+                   Answer(title: "To sleep", type: .frenchCat),
+                   Answer(title: "To eat", type: .germanCat),
+                   Answer(title: "To walk", type: .englishCat),
+                   Answer(title: "To play", type: .germanCat)
                ]
            ),
            Question(
                title: "What kind of movies do you like?",
                answers: [
-                   Answer(title: "Melodramas", type: [.frenchCat, .spanishCat]),
-                   Answer(title: "Comedies", type: [.russianCat, .germanCat]),
-                   Answer(title: "Documentaries", type: [.germanCat, .japaneseCat]),
-                   Answer(title: "Differents", type: [.englishCat, .russianCat])
+                   Answer(title: "Melodramas", type: .spanishCat),
+                   Answer(title: "Comedies", type: .germanCat),
+                   Answer(title: "Documentaries", type: .japaneseCat),
+                   Answer(title: "Differents", type: .russianCat)
                ]
            )
        ]
