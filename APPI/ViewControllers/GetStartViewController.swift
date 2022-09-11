@@ -10,6 +10,7 @@ import UIKit
 final class GetStartViewController: UIViewController {
     // MARK: - IBOutlets
     @IBOutlet var getStartCatImage: UIImageView!
+    @IBOutlet var startTestButton: UIButton!
     
     // MARK: - Properties
     var startCat: String?
@@ -19,6 +20,8 @@ final class GetStartViewController: UIViewController {
         super.viewDidLoad()
 
          getStartCatImage.image = UIImage(named: startCat ?? "getStartCat")
+        
+        startTestButton.layer.cornerRadius = 10
     }
     
     // MARK: - IBActions

@@ -54,6 +54,12 @@ final class QuestionsViewController: UIViewController {
         movieImage.image = UIImage(named: questionImage ?? "movie")
         
         updateUserInterface()
+        buttonSettings()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let resultVC = segue.destination as? ResultsViewController else { return }
+        resultVC.answers = answerSelected
     }
     
     // MARK: - IBActions
@@ -92,6 +98,29 @@ final class QuestionsViewController: UIViewController {
         
         getNextQuestion()
     }
+    
+    // MARK: - Private functions
+    private func buttonSettings() {
+        let buttons = [colorAnswers, foodAnswers, hobbyAnswers, movieAnswers]
+        
+        for _ in buttons {
+            for colorAnswer in colorAnswers {
+                colorAnswer.layer.cornerRadius = 15
+            }
+            
+            for foodAnswer in foodAnswers {
+                foodAnswer.layer.cornerRadius = 15
+            }
+            
+            for hobbyAnswer in hobbyAnswers {
+                hobbyAnswer.layer.cornerRadius = 15
+            }
+            
+            for movieAnswer in movieAnswers {
+                movieAnswer.layer.cornerRadius = 15
+            }
+        }
+    }
 }
 
     // MARK: - Extantions
@@ -110,9 +139,9 @@ final class QuestionsViewController: UIViewController {
         private func showCurrentAnswers(index: Int) {
             switch index {
             case 0:
-                showColorQuestionStackView(stackView: colorStackView, question: currentQuestion, answers: currentAnswers, image: colorImage)
+                showColorQuestionStackView(question: currentQuestion, answers: currentAnswers, image: colorImage)
             case 1:
-                showFoodQuestionStackView(question: currentQuestion, answers: currentAnswers, image:         foodImage)
+                showFoodQuestionStackView(question: currentQuestion, answers: currentAnswers, image: foodImage)
             case 2:
                 showHobbyQuestionStackView(question: currentQuestion, answers: currentAnswers, image: hobbyImage)
             default:
@@ -120,8 +149,8 @@ final class QuestionsViewController: UIViewController {
             }
         }
         
-        private func showColorQuestionStackView(stackView: UIStackView, question: String, answers: [Answer], image: UIImageView) {
-            stackView.isHidden = false
+        private func showColorQuestionStackView(question: String, answers: [Answer], image: UIImageView) {
+            colorStackView.isHidden = false
             
             colorQuestion.text = currentQuestion
             

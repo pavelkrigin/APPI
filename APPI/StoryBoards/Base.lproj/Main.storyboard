@@ -168,6 +168,7 @@
                     <navigationItem key="navigationItem" id="ntH-C3-urs"/>
                     <connections>
                         <outlet property="getStartCatImage" destination="m7n-kc-NoD" id="eFI-uT-qqV"/>
+                        <outlet property="startTestButton" destination="yqt-JK-80X" id="7WG-Vj-fhv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5hL-Yr-6Rt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -677,7 +678,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="5cu-e5-CBx">
-                                <rect key="frame" x="55" y="55" width="265" height="488"/>
+                                <rect key="frame" x="55" y="55" width="265" height="346"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xy3-1h-Huc">
                                         <rect key="frame" x="86" y="0.0" width="93.5" height="30"/>
@@ -697,9 +698,8 @@
                                             <constraint firstAttribute="width" secondItem="d03-Ql-9ON" secondAttribute="height" multiplier="1:1" id="YMD-x3-9s3"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmC-vE-w6O">
-                                        <rect key="frame" x="0.0" y="325.5" width="265" height="162.5"/>
-                                        <string key="text">You are a cat who appreciates beauty in things. You are a sociable and gallant cat. You are a cat that can meow beautifully. You are a cat who prefers fish and croissants. You also love to be lazy and spend your free time lying in a warm blanket</string>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmC-vE-w6O">
+                                        <rect key="frame" x="112" y="325.5" width="41.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -736,7 +736,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="catDescription" destination="fmC-vE-w6O" id="9qy-Ez-JYu"/>
+                        <outlet property="catLabel" destination="Qhq-cF-83g" id="9YG-eh-fE4"/>
                         <outlet property="resultsImageView" destination="d03-Ql-9ON" id="iGb-9o-Dfm"/>
+                        <outlet property="startTestAgainButton" destination="Udi-gO-uKc" id="Qfh-W8-mh8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="juk-Kk-vn1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
