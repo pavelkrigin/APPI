@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 class ContactDetailsTableViewController: UITableViewController {
 
     let personsContact = Person.getPersonsData()

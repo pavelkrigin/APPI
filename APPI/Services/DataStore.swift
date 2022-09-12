@@ -5,6 +5,7 @@
 //  Created by Pavel Krigin on 6.9.22..
 //
 
+
 final class DataStore {
     
     static let shared = DataStore()
