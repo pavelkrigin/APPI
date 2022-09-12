@@ -11,6 +11,7 @@ final class PersonListViewController: UITableViewController {
     let devFullData = Person.getPersonsData().shuffled() // возвращает массив с экземплярами нашей модели
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
