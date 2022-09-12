@@ -21,7 +21,7 @@ struct User {
     }
 }
 
-struct Person {
+struct Developer {
     
     let name: String
     let surname: String
@@ -36,13 +36,13 @@ struct Person {
             [email, telegramm, gitAccount]
         }
 }
-extension Person {
-    static func getPersonsData() -> [Person] {
-        var persons:[Person] = []
+extension Developer {
+    static func getPersonsData() -> [Developer] {
+        var persons:[Developer] = []
         let dataStore = DataStore.shared
         
         for person in 0..<dataStore.names.count {
-            persons.append(Person(name: dataStore.names[person],
+            persons.append(Developer(name: dataStore.names[person],
                                   surname: dataStore.surnames[person],
                                   email: dataStore.emails[person],
                                   telegramm: dataStore.telegramms[person],

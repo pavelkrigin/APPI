@@ -9,17 +9,10 @@ import UIKit
 
 
 final class PersonListViewController: UITableViewController {
-    let devFullData = Person.getPersonsData().shuffled() // возвращает массив с экземплярами нашей модели
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
-
+    let devFullData = Developer.getPersonsData().shuffled() 
+       
     // MARK: - Table view data source
 
-    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         devFullData.count
     }
@@ -32,9 +25,7 @@ final class PersonListViewController: UITableViewController {
         var content = cell.defaultContentConfiguration()
         content.text = person.fullName
         cell.contentConfiguration = content
-        
-        
-        
+                
         return cell
     }
     
@@ -42,7 +33,5 @@ final class PersonListViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: "show", sender: nil)
     }
-  
-    // MARK: - Navigation
-    
+          
 }
