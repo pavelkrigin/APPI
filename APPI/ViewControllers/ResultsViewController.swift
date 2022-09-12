@@ -25,7 +25,6 @@ final class ResultsViewController: UIViewController {
         super.viewDidLoad()
         
         startTestAgainButton.layer.cornerRadius = 15
-        
         updateRsult()
     }
 }
@@ -50,6 +49,7 @@ extension ResultsViewController {
         updateUserInterface(cat: mostFrequencyCat)
     }
     
+    // MARK: - Private methods
     private func updateUserInterface(cat: CatType) {
         catLabel.text = "You are a cat - \(cat.rawValue)!"
         resultsImageView.image = UIImage(named: resultImage ?? cat.rawValue)
