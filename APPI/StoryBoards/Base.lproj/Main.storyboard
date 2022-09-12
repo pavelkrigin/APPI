@@ -119,8 +119,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, User!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opf-1e-Efr">
-                                <rect key="frame" x="121" y="99" width="133.5" height="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opf-1e-Efr">
+                                <rect key="frame" x="155.5" y="99" width="64" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -169,6 +169,7 @@
                     <connections>
                         <outlet property="getStartCatImage" destination="m7n-kc-NoD" id="eFI-uT-qqV"/>
                         <outlet property="startTestButton" destination="yqt-JK-80X" id="5bh-wV-ryq"/>
+                        <outlet property="welcomeUser" destination="Opf-1e-Efr" id="KYc-dI-2uf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5hL-Yr-6Rt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
