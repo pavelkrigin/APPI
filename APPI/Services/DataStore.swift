@@ -10,11 +10,11 @@ final class DataStore {
     static let shared = DataStore()
     
     var names = [
-        "Альбина", "Павел", "Павел", "Илья"
+        "Albina", "Pavel", "Pavel", "Ilya"
     ]
     
     let surnames = [
-        "Петренко", "Кригин", "Лазарев", "Осипов"
+        "Petrenko", "Krigin", "Lazarev", "Osipov"
         
     ]
     
