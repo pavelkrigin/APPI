@@ -273,7 +273,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="g0w-eq-XkG" kind="show" identifier="show" id="dXq-h5-jhl"/>
+                                    <segue destination="bQv-WY-N0a" kind="show" identifier="show" id="rZj-F4-D4b"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -282,11 +282,33 @@
                             <outlet property="delegate" destination="Jaj-yf-MmB" id="0OJ-UW-int"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Developed by" id="bUR-8U-zmW"/>
+                    <navigationItem key="navigationItem" title="Developed by" id="bUR-8U-zmW">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="s0c-3a-PDt">
+                            <connections>
+                                <segue destination="g0w-eq-XkG" kind="presentation" identifier="List" modalPresentationStyle="fullScreen" id="UmJ-1u-x29"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L4k-ya-DKh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4046" y="794"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qYf-Ld-pbk">
+            <objects>
+                <viewController id="bQv-WY-N0a" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3km-Jv-E97">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mnA-Zf-vgR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="yI7-nJ-lCw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nn3-LQ-vlJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4046" y="1562"/>
         </scene>
         <!--Contact Details Table View Controller-->
         <scene sceneID="RnN-Bs-M5U">
@@ -368,7 +390,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nsa-mc-XKi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4898" y="794"/>
+            <point key="canvasLocation" x="4978" y="794"/>
         </scene>
         <!--DevInfo-->
         <scene sceneID="8TL-ja-Ebx">
