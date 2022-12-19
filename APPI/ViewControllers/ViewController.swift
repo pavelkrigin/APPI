@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  APPI 
+//  APPI
 //
 //  Created by Pavel Krigin on 5.9.22..
 //

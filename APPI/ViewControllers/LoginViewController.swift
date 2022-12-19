@@ -1,6 +1,6 @@
 //
 //  LoginViewController.swift
-//  APPI 
+//  APPI
 //
 //  Created by Pavel Krigin on 10.9.22..
 //
